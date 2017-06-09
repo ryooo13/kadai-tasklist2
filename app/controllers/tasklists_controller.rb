@@ -4,7 +4,7 @@ class TasklistsController < ApplicationController
   before_action :correct_user, only: [:destroy]
   
   def index
-    　@tasklists = Tasklist.order(created_at: :desc).page(params[:page]).per(3)
+    @tasklists = Tasklist.order(created_at: :desc).page(params[:page]).per(3)
     
     if logged_in?
       @user = current_user
