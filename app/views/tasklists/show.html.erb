@@ -15,5 +15,6 @@
   </tr>
 </table>
 
+<%= link_to '一覧に戻る', tasklists_path %>
 <%= link_to 'このタスクを編集する', edit_tasklist_path(@tasklist), class: 'btn btn-default' %>
 <%= link_to 'このタスクを削除する', @tasklist, method: :delete, data: { confirm: '本当に削除してよろしいですか？' }, class: 'btn btn-danger' %>
